@@ -1,0 +1,33 @@
+#include<iostream>
+using std::cout;
+using std::cin;
+class Myclass
+{
+ int count;
+ int number;
+ public:
+ void set(int num)
+ {
+ number=num;
+ ++count;
+ }
+ void show()
+{
+ cout<<"Number of calls made to set() thro any object\n"<<count;
+ cout<<"\n"<<number;
+ cout<<"\n";
+}
+};
+main()
+{
+ Myclass obj1,obj2,obj3;
+ obj1.show();
+ obj1.set(100);
+ obj1.show();
+ obj2.set(200);
+ obj2.show();
+ obj2.set(250);
+ obj2.show();
+ obj3.set(300);
+ obj3.show();
+}

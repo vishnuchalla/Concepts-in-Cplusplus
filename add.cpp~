@@ -1,0 +1,35 @@
+#include<iostream>
+using std::cout;
+using std::cin;
+class Sum
+{
+ int a,b;
+ void set_val()
+ {
+  a=10,b=20;
+ }
+ void display()
+ {
+  cout<<"a="<<a<<"\n"<<"b="<<b;
+ }
+ public:
+ void sum()
+ {
+  set_val();
+  display();
+  cout<<"\nsum="<<a+b;
+ }
+void sub(void);
+};
+void Sum::sub()
+{
+ a=30;
+ b=10;
+ cout<<"\nSubtraction="<<a-b<<"\n";
+}
+main()
+{
+ Sum *s;
+ s->sum();
+ s->sub();
+}

@@ -1,0 +1,15 @@
+#include<iostream>
+using std::cout;
+using std::cin;
+inline int rect(int i)
+{
+ return 5*i;
+}
+main()
+{
+ int x;
+ cout<<"Enter the input value\n";
+ cin>>x;
+ rect(x);
+ cout<<"\nThe output is:"<<(x);
+}
